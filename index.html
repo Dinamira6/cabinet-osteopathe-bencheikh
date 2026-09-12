@@ -8,17 +8,16 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦴</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
+<div class="progress-bar" id="progress-bar"></div>
+
+<header class="site-header" id="site-header">
   <div class="container header-inner">
     <a href="#top" class="logo">
-      <span class="logo-icon" aria-hidden="true">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 14c-1.7 0-3-1.3-3-3s1.3-3 3-3c.4-1.7 2-3 3.9-3 1.1 0 2.1.5 2.8 1.2.6-.7 1.5-1.2 2.6-1.2 1.9 0 3.5 1.3 3.9 3 1.7 0 3 1.3 3 3s-1.3 3-3 3c-.4 1.7-2 3-3.9 3-1.1 0-2.1-.5-2.8-1.2-.6.7-1.5 1.2-2.6 1.2-1.9 0-3.5-1.3-3.9-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      </span>
       <span class="logo-text">Karim Ben Cheikh<br><small>Ostéopathe D.O.</small></span>
     </a>
     <nav class="main-nav" id="main-nav">
@@ -28,69 +27,86 @@
       <a href="#horaires">Horaires</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-primary nav-cta" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre RDV</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <a class="phone-link" href="tel:0240356043">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        02 40 35 60 43
+      </a>
+      <a class="btn btn-primary nav-cta" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre RDV</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 <main id="top">
 
   <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1699523229208-be1e1dd9252d?auto=format&fit=crop&w=2000&q=80" alt="">
+      <div class="hero-scrim"></div>
+    </div>
     <div class="container hero-inner">
-      <p class="eyebrow">Cabinet d'ostéopathie · Nantes</p>
-      <h1>Une prise en charge sur mesure, pour vous et vos animaux</h1>
-      <p class="hero-lead">Karim Ben Cheikh, ostéopathe D.O. diplômé, vous accueille au 3 Place Aristide Briand à Nantes pour une approche globale et douce, adaptée à votre âge, votre mode de vie et vos besoins.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary btn-lg" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
+      <p class="eyebrow hero-eyebrow reveal-line" style="--d:0">Cabinet d'ostéopathie · Nantes</p>
+      <h1 class="hero-wordmark" aria-label="Karim Ben Cheikh">
+        <span class="reveal-line" style="--d:1">Karim</span>
+        <span class="reveal-line" style="--d:2">Ben</span>
+        <span class="reveal-line" style="--d:3">Cheikh</span>
+      </h1>
+      <div class="hero-actions reveal-line" style="--d:4">
+        <a class="btn btn-primary btn-lg" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre rendez-vous</a>
         <a class="btn btn-ghost btn-lg" href="#contact">Voir les coordonnées</a>
       </div>
-      <ul class="hero-badges">
-        <li>👤 Adultes &amp; adolescents</li>
-        <li>🤰 Femmes enceintes</li>
-        <li>👶 Nourrissons &amp; enfants</li>
-        <li>🐾 Animaux</li>
-      </ul>
     </div>
+    <div class="hero-caption reveal-line" style="--d:5">
+      <span>Ostéopathie</span> <strong>humaine &amp; animale</strong>
+    </div>
+    <button class="scroll-hint" id="scroll-hint" aria-label="Défiler vers le bas">
+      <span></span>
+    </button>
   </section>
+
+  <div class="booking-float" id="booking-float">
+    <button class="booking-close" id="booking-close" aria-label="Fermer">×</button>
+    <p class="booking-eyebrow">Rendez-vous</p>
+    <p class="booking-text">Consultations disponibles cette semaine</p>
+    <a class="btn btn-primary btn-sm" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Réserver sur Doctolib</a>
+  </div>
 
   <section id="praticien" class="section">
     <div class="container two-col">
-      <div class="col-text">
-        <p class="eyebrow">Le praticien</p>
-        <h2>Une approche globale, douce et personnalisée</h2>
-        <p>Ostéopathe D.O. diplômé, je vous accueille au cabinet à Nantes pour une prise en charge personnalisée, adaptée à votre âge, votre mode de vie et vos besoins.</p>
-        <p>Chaque consultation débute par une anamnèse complète, suivie d'un examen clinique afin d'adapter précisément le traitement. L'objectif est de soulager la douleur, améliorer la mobilité et prévenir les récidives.</p>
-        <p>Ma pratique repose sur une approche globale et douce, combinant différentes techniques ostéopathiques, dans le respect de votre confort.</p>
+      <div class="col-media reveal" data-reveal>
+        <img src="https://images.unsplash.com/photo-1620051844584-15ac31d5fccd?auto=format&fit=crop&w=1200&q=80" alt="Séance d'ostéopathie, manipulation de la main">
       </div>
-      <div class="col-card">
-        <div class="info-card">
-          <h3>Déroulement d'une consultation</h3>
-          <ol class="steps">
-            <li><strong>Anamnèse</strong> — recueil complet de votre historique et de vos besoins</li>
-            <li><strong>Examen clinique</strong> — évaluation précise pour cibler le traitement</li>
-            <li><strong>Traitement ostéopathique</strong> — techniques douces et adaptées</li>
-            <li><strong>Conseils</strong> — prévention et suivi personnalisé</li>
-          </ol>
-        </div>
+      <div class="col-text">
+        <p class="eyebrow reveal" data-reveal>Le praticien</p>
+        <h2 class="mixed-heading reveal" data-reveal>Une approche <strong>globale, douce et personnalisée.</strong></h2>
+        <p class="reveal" data-reveal data-delay="1">Ostéopathe D.O. diplômé, je vous accueille au cabinet à Nantes pour une prise en charge personnalisée, adaptée à votre âge, votre mode de vie et vos besoins.</p>
+        <p class="reveal" data-reveal data-delay="2">Chaque consultation débute par une anamnèse complète, suivie d'un examen clinique afin d'adapter précisément le traitement. L'objectif est de soulager la douleur, améliorer la mobilité et prévenir les récidives.</p>
+        <a class="arrow-link reveal" data-reveal data-delay="3" href="#prestations">
+          <span class="arrow-circle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          En savoir plus sur les prestations
+        </a>
       </div>
     </div>
   </section>
 
   <section id="prestations" class="section section-alt">
     <div class="container">
-      <p class="eyebrow center">Prestations</p>
-      <h2 class="center">Douleurs et troubles pris en charge</h2>
+      <p class="eyebrow center reveal" data-reveal>Prestations</p>
+      <h2 class="center mixed-heading reveal" data-reveal>Douleurs et troubles <strong>pris en charge</strong></h2>
       <div class="grid grid-2">
         <ul class="check-list">
-          <li>Douleurs du dos (lombalgies, dorsalgies)</li>
-          <li>Cervicalgies</li>
-          <li>Douleurs d'épaules, hanches, genoux</li>
-          <li>Maux de tête et céphalées</li>
-          <li>Troubles posturaux</li>
+          <li class="reveal" data-reveal data-delay="0">Douleurs du dos (lombalgies, dorsalgies)</li>
+          <li class="reveal" data-reveal data-delay="1">Cervicalgies</li>
+          <li class="reveal" data-reveal data-delay="2">Douleurs d'épaules, hanches, genoux</li>
+          <li class="reveal" data-reveal data-delay="3">Maux de tête et céphalées</li>
+          <li class="reveal" data-reveal data-delay="4">Troubles posturaux</li>
         </ul>
-        <div class="public-card">
+        <div class="public-card reveal" data-reveal data-delay="2">
           <h3>Un accompagnement pour chacun</h3>
           <div class="public-grid">
             <div class="public-item"><span aria-hidden="true">🏃</span>Sportifs — prévention, récupération, performance</div>
@@ -103,52 +119,89 @@
     </div>
   </section>
 
-  <section id="animaux" class="section section-highlight">
-    <div class="container animal-section">
-      <div class="animal-icon" aria-hidden="true">🐾</div>
-      <p class="eyebrow">Ostéopathie humaine &amp; animale</p>
-      <h2>Des consultations pour vos animaux aussi</h2>
-      <p>En plus de l'ostéopathie pour humains, Karim Ben Cheikh propose également des consultations d'ostéopathie animale. Une prise en charge douce et adaptée à la morphologie et aux besoins de chaque animal.</p>
+  <section id="animaux" class="section-tabs">
+    <div class="tabs-media">
+      <img src="https://images.unsplash.com/photo-1699523229921-ba6253ad0277?auto=format&fit=crop&w=2000&q=80" alt="Ostéopathie pédiatrique" class="tabs-img is-active" data-tab-img="humains">
+      <img src="https://images.unsplash.com/photo-1699449424579-ceb830ce607d?auto=format&fit=crop&w=2000&q=80" alt="Ostéopathie animale, chien" class="tabs-img" data-tab-img="animaux">
+      <div class="tabs-scrim"></div>
+    </div>
+    <div class="container tabs-content">
+      <p class="eyebrow tabs-eyebrow">Ostéopathie humaine &amp; animale</p>
+      <h2 class="tabs-caption" data-tab-caption="humains">Une prise en charge pour <strong>toute la famille</strong>, de l'enfant à l'adulte.</h2>
+      <h2 class="tabs-caption" data-tab-caption="animaux" hidden>Des consultations douces et <strong>adaptées à chaque animal.</strong></h2>
       <a class="btn btn-primary" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre rendez-vous</a>
+    </div>
+    <div class="tabs-nav">
+      <button class="tab-btn is-active" data-tab="humains">Humains</button>
+      <button class="tab-btn" data-tab="animaux">Animaux</button>
     </div>
   </section>
 
-  <section id="horaires" class="section">
-    <div class="container two-col">
-      <div class="col-card">
-        <div class="info-card">
-          <h3><span class="icon-inline" aria-hidden="true">🕒</span> Horaires d'ouverture</h3>
-          <table class="hours-table">
-            <tbody>
-              <tr><th>Lundi</th><td>09h00 – 21h00</td></tr>
-              <tr><th>Mardi</th><td>09h00 – 21h00</td></tr>
-              <tr><th>Mercredi</th><td>09h00 – 21h00</td></tr>
-              <tr><th>Jeudi</th><td>09h00 – 21h00</td></tr>
-              <tr><th>Vendredi</th><td>09h00 – 21h00</td></tr>
-              <tr><th>Samedi</th><td>09h00 – 21h00</td></tr>
-              <tr><th>Dimanche</th><td>14h00 – 19h00</td></tr>
-            </tbody>
-          </table>
-        </div>
+  <section id="cabinet" class="section">
+    <div class="container">
+      <p class="eyebrow center reveal" data-reveal>Le cabinet</p>
+      <h2 class="center mixed-heading reveal" data-reveal>Un cadre <strong>calme et professionnel</strong></h2>
+    </div>
+    <div class="carousel" id="carousel">
+      <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Image précédente">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="carousel-track" id="carousel-track">
+        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1590049405811-dd8770d073f6?auto=format&fit=crop&w=1200&q=80" alt="Manipulation ostéopathique du pied"></div>
+        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&w=1200&q=80" alt="Salle de consultation prête pour une séance"></div>
+        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1616764544963-5c16b70f9727?auto=format&fit=crop&w=1200&q=80" alt="Accompagnement en douceur"></div>
       </div>
-      <div class="col-text">
-        <p class="eyebrow">Coordonnées</p>
-        <h2>Nous contacter</h2>
-        <p class="contact-line"><span class="icon-inline" aria-hidden="true">📍</span> 3 Place Aristide Briand, 44000 Nantes</p>
-        <p class="contact-line"><span class="icon-inline" aria-hidden="true">📞</span> <a href="tel:0240356043">02 40 35 60 43</a></p>
-        <div class="emergency-note">
-          <strong>En cas d'urgence</strong>, contactez le 15 (SAMU). L'ostéopathie ne se substitue pas à une prise en charge médicale d'urgence.
+      <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Image suivante">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="carousel-dots" id="carousel-dots">
+        <button class="dot is-active" data-slide="0" aria-label="Aller à l'image 1"></button>
+        <button class="dot" data-slide="1" aria-label="Aller à l'image 2"></button>
+        <button class="dot" data-slide="2" aria-label="Aller à l'image 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="horaires" class="section-float-card">
+    <div class="float-card-bg">
+      <img src="https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&w=2000&q=80" alt="">
+    </div>
+    <div class="container">
+      <div class="float-card reveal" data-reveal>
+        <div class="float-card-grid">
+          <div>
+            <p class="eyebrow">Horaires d'ouverture</p>
+            <table class="hours-table">
+              <tbody>
+                <tr><th>Lundi</th><td>09h00 – 21h00</td></tr>
+                <tr><th>Mardi</th><td>09h00 – 21h00</td></tr>
+                <tr><th>Mercredi</th><td>09h00 – 21h00</td></tr>
+                <tr><th>Jeudi</th><td>09h00 – 21h00</td></tr>
+                <tr><th>Vendredi</th><td>09h00 – 21h00</td></tr>
+                <tr><th>Samedi</th><td>09h00 – 21h00</td></tr>
+                <tr><th>Dimanche</th><td>14h00 – 19h00</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <p class="eyebrow">Coordonnées</p>
+            <p class="contact-line">3 Place Aristide Briand<br>44000 Nantes</p>
+            <p class="contact-line"><a href="tel:0240356043">02 40 35 60 43</a></p>
+            <div class="emergency-note">
+              <strong>En cas d'urgence</strong>, contactez le 15 (SAMU). L'ostéopathie ne se substitue pas à une prise en charge médicale d'urgence.
+            </div>
+            <a class="btn btn-primary" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
+          </div>
         </div>
-        <a class="btn btn-primary btn-lg" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre rendez-vous sur Doctolib</a>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section section-alt">
     <div class="container">
-      <p class="eyebrow center">Accès</p>
-      <h2 class="center">3 Place Aristide Briand, 44000 Nantes</h2>
-      <div class="map-wrap">
+      <p class="eyebrow center reveal" data-reveal>Accès</p>
+      <h2 class="center mixed-heading reveal" data-reveal>3 Place Aristide Briand, <strong>44000 Nantes</strong></h2>
+      <div class="map-wrap reveal" data-reveal>
         <iframe
           title="Carte d'accès au cabinet"
           src="https://www.google.com/maps?q=3+Place+Aristide+Briand,+44000+Nantes&output=embed"
@@ -161,12 +214,28 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <strong>Karim Ben Cheikh — Ostéopathe D.O.</strong>
-      <p>3 Place Aristide Briand, 44000 Nantes · <a href="tel:0240356043">02 40 35 60 43</a></p>
+  <div class="container footer-top">
+    <div class="footer-wordmark">Karim<br>Ben<br>Cheikh</div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Cabinet</h4>
+        <a href="#praticien">Le praticien</a>
+        <a href="#prestations">Prestations</a>
+        <a href="#animaux">Humains &amp; Animaux</a>
+        <a href="#horaires">Horaires</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rendez-vous</h4>
+        <a href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Doctolib</a>
+        <a href="tel:0240356043">02 40 35 60 43</a>
+        <span>Urgences : 15 (SAMU)</span>
+      </div>
+      <div class="footer-col">
+        <h4>Accès</h4>
+        <a href="#contact">3 Place Aristide Briand</a>
+        <span>44000 Nantes</span>
+      </div>
     </div>
-    <a class="btn btn-primary" href="https://www.doctolib.fr/osteopathe/nantes/karim-ben-cheikh" target="_blank" rel="noopener">Prendre rendez-vous</a>
   </div>
   <div class="container footer-bottom">
     <p>&copy; <span id="year"></span> Karim Ben Cheikh. Tous droits réservés.</p>
